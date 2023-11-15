@@ -1,0 +1,16 @@
+header a {
+     margin-right: 35px;
+     vertical-align: 13px;
+     color: blue;
+     font-weight: 550;
+     
+}
+
+body {
+    background-color: yellow;
+}
+
+header img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
