@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <form action=""" method="get">
+        <fieldset>
+        <legend>Pizza Order</legend>
+        <label for="yourName">Your name:</label>
+        <input type="text" name="name" id="yourName" value="Alexandru" required />
+
+        <br />
+        <br />
+        <label for="yourEmail">Your email:</label>
+        <input type="text" name="email" id="yourEmail" required /> 
+
+        <br />
+        <br />
+
+        <label for="Topping">Topping:</label>
+        <input type="radio" name="topping" id="Supreme" value="Supreme"/>
+        <label for="Supreme">Supreme</label>
+        <input type="radio" name="topping" id="Vegetarian" value="Vegetarian"/>
+        <label for="Vegetarian">Vegetarian</label>
+        <input type="radio" name="topping" id="Hawaiian" value="Hawaiian" checked/>
+        <label for="Hawaiian">Hawaiian</label>
+
+        <br />
+        <br />
+
+
+        <label for="Sauce">Sauce:</label>
+        <select id="Sauce" name="Sauce">
+            <option value="Hot Sauce">Hot Sauce</option>
+            <option value="Pineapple">Pineapple</option>
+            <option value="Ketchup">Ketchup</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="Extras">Extras:</label>
+        <input type="checkbox" name="Extras" id="Cheese" checked/>
+        <label for="Cheese">Cheese</label>
+        <input type="checkbox" name="Extras" id="Onion"/>
+        <label for="Onion">Onion</label>
+        <input type="checkbox" name="Extras" id="Olives"/>
+        <label for="Olives">Olives</label>
+
+        <br />
+        <br />
+
+        <label for="Quantity">Quantity:</label>
+        <input type="number" id="Quantity" name="Quantity" min="1" max="7" value="3" />
+
+        <br />
+        <br />
+
+        <label for="Delivery">Delivery Date:</label>
+        <input type="date" id="Delivery" name="Delivery" />
+
+        <br />
+        <br />
+
+        <label for="Instructions">Delivery Instructions:</label>
+        <textarea id="Instructions" name="Instructions" required placeholder="Your delivery instrunctions..."></textarea>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Send Order" />
+        <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+</body>
+</html>
