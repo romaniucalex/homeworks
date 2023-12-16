@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+div {
+    width: 400px;
+    height: 350px;
+}
+
+.background-image {
+    border: 10px dotted red;
+    background-image: url("./img/Giraffe.png");
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    padding: 20px;
+
+    box-sizing: border-box;
+    background-position: center;
+    background-size: 300px;
+}
