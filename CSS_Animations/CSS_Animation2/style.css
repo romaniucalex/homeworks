@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    background-color: #2D5971;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    animation-name: moving;
+    animation-duration: 4s;
+}
+
+@keyframes moving {
+    from {
+        top: 20px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+.about {
+    position: absolute;
+    color: white;
+    animation-name: left;
+    animation-duration: 4s;
+    top: 300px;
+    text-align: center;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.read {
+    position: absolute;
+    padding: 10px;
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+    top: 500px; 
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+}
+
+@keyframes appear {
+    from {
+        background-color: transparent;
+        color: transparent;
+        border: 2px solid transparent;
+    }
+
+    to {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+}
